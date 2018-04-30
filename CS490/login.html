@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<script src="login.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<html>
+<head> <title> CS490 </title> </head>
+<body>  
+
+<meta charset="utf-8"/>
+<!-- Text boxes and buttons -->
+<div align="center">
+<h2>Login Checker</h2>
+
+<form method = "POST">
+
+<!-- echos data back -->
+<!-- <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">   -->
+ 	<!-- USer ID text box input -->
+	<!-- UserID :&nbsp;&nbsp;&nbsp; <input type="text" name="userID" value="<?php echo $userID;?>"> -->
+	
+
+	UserID :&nbsp;&nbsp;&nbsp; <input type="text" name="userID" id="userName" value="theo" placeholder="UserID">
+	<br><br>
+
+	Password : <input type="password" name="password" id = passW value="matter" placeholder="Password" onKeyDown="if(event.keyCode==13) attemptLogin();">
+
+	<!-- Password text box input -->
+	<!-- Password : <input type="password" name="password" value="<?php  $password;?>"> -->
+	<br><br>
+	<p id="returnText">&nbsp</p>
+
+	<br><br>
+	<!-- Submit button -->
+	<button type="button" id = "button" onclick="attemptLogin()" >Click to Login  </button>
+
+	<!-- <input type="submit" name="submit" value="Submit">   -->
+
+	</form>	
+
+
+
+
+
+
+<!-- 	<script type="text/javascript">
+			// var testChange = 
+			// document.getElementById("returnText").innerHTML = "ASDASDASD";
+			// testChange.style.color = "red";
+			// testChange.text = "asd";
+
+		function alertFunction(){
+
+		alert("assgoblins");
+	}
+	</script> -->
+
+
+
+</body>
+</html> 
